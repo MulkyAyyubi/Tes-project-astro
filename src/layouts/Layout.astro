@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+	
+</head>
+<body>
+	<nav>
+		<p>Navigation menu</p>
+		<ul style="display: flex; gap: 20px;">
+			<li><a href="/about" target="_blank">about</a></li>
+			<li><a href="/contact" target="_blank">contact</a></li>
+		</ul>
+	</nav>
+
+    <slot />
+
+	<footer>Footer Space</footer>
+
+</body>
+</html>
+
+<style>
+	nav{
+		background-color: black;
+		color: white;
+	}
+
+	footer{
+		background-color: black;
+		color: white;
+		height: 80px;
+	}
+</style>
